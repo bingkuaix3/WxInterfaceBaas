@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 记得手动同步apache-tomcat\conf\Catalina\localhost\baas.xml -->
+<Context reloadable="true">
+	<Resource name="jdbc/x5demo" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30"
+		driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/x5demo"
+		username="root" password="x5" />
+		
+	<Resource name="jdbc/x5sys" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30"
+		driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/x5sys"
+		username="root" password="x5" />
+		
+	<Resource name="jdbc/takeout" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30"
+		driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/takeout"
+		username="root" password="x5" />
+</Context>
